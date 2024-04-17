@@ -11,9 +11,10 @@
 <body>
   <h1>HELLO FLASK</h1>
   <!--<form action="/input/save_post" method="POST">-->
-  <form action="/input/save_get" method="GET">
-    <input type="text" name="value" placeholder="value"/>
-    <input type="text" name="message" placeholder="message"/>
+  <form action="{{action}}" method="{{method}}" enctype="multipart/form-data">
+    <input type="text" name="value" placeholder="value" />
+    <input type="text" name="message" placeholder="message" />
+    <input type="file" name="filename" placeholder="파일을 첨부해주세요"/>
     <input type="submit" value="submit" />
 </body>
 
